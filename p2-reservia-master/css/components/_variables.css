@@ -1,0 +1,14 @@
+:root {
+  --blue: #0065FC;
+  --light-blue: #DEEBFF;
+  --grey: #F2F2F2;
+  --dark-grey: grey;
+  --main-font: 'Raleway', sans serif;
+  --main-font-color: black;
+  --padding-bottom: 1.5rem;
+  --margin-x: 1rem;
+  --hotel-image: 350px;
+  --navbar-mobile-height: 7rem;
+  --navbar-tablet-height: 6rem;
+  --navbar-desktop-height: 5rem;
+}

@@ -1,0 +1,77 @@
+.what-to-do {
+  scroll-margin-top: calc(var(--navbar-mobile-height) + 1rem);
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .what-to-do {
+    scroll-margin-top: calc(var(--navbar-tablet-height) + 1rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .what-to-do {
+    scroll-margin-top: calc(var(--navbar-desktop-height) + 3rem);
+    padding: 0 3rem;
+  }
+}
+
+.what-to-do-container {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .what-to-do-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .what-to-do-container {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-full-height, .desktop-half-height {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-full-height {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop-half-height {
+    width: 25%;
+  }
+}
+
+.what-to-do-box {
+  border-radius: 12px;
+  margin-bottom: var(--padding-bottom);
+  box-shadow: 1px 1px 10px var(--grey);
+}
+
+@media only screen and (min-width: 768px) {
+  .what-to-do-box {
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .what-to-do-box:hover {
+    transform: scale(1.03, 1.03);
+  }
+}
+
+.what-to-do-title {
+  padding-left: var(--padding-bottom);
+  font-size: inherit;
+  padding-bottom: 1rem;
+}

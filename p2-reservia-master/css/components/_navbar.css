@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: var(--navbar-mobile-height);
+  padding: 1rem;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+    height: var(--navbar-tablet-height);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    flex-wrap: nowrap;
+    height: var(--navbar-desktop-height);
+    padding: 1.5rem;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: initial;
+    flex-grow: 1;
+  }
+}
+
+.get-account {
+  order: 1;
+  font-weight: bold;
+  color: var(--blue);
+  width: 50%;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .get-account {
+    order: 2;
+    width: 10rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+.menu {
+  order: 2;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 -1rem 0 -1rem;
+  padding-inline-start: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    order: 1;
+    width: initial;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.nav-item {
+  list-style-type: none;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: solid var(--grey);
+} 
+
+.nav-item:hover {
+  border-bottom: solid var(--blue);
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-item {
+    border-bottom: none;
+    border-top: solid transparent;
+    width: 10rem;
+    display: inline-block;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-item:hover {
+    border-bottom: none;
+    border-top: solid var(--blue);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--blue);
+}

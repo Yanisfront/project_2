@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  margin: 0;
+  font-family: var(--main-font);
+}
+
+p {
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.clickable-flex {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .clickable-flex {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .clickable-flex {
+    display: flex;
+  }
+}
+
+.clickable-flex:hover {
+  color: inherit;
+}
+
+.clickable {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.clickable:hover {
+  color: inherit;
+}
